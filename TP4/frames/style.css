@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins",sans-serif;
+}
+body {
+    background-color: transparent;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    color: #E8D8C4;
+}
+.hyperlinks {
+   text-decoration: none;
+   color: rgb(255, 255, 255);
+   font-size: 25px;
+   font-weight: 900;
+   transition: 0.5s ease-out;
+   background-color: #3E3232;
+   border: 5px outset #3E3232;
+}
+.hyperlinks:hover{
+    background-color: #2b2323;
+    border-color:#2b2323;
+    color: rgb(121, 121, 121);
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+table{
+    border-collapse: collapse;
+    width: 50%;
+    min-width: 450px;
+    max-width: 550px;
+}
+table tr{
+    border: 1px solid rgb(0, 0, 0);
+}
+table tr th{
+    text-align: center;
+    padding: 8px;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    background-color: #67296d;
+    border: 5px outset #67296d;
+}
+table tr th::selection{
+    background-color: #9b5501;
+    border: 5px outset #a59786;
+}
+table tr th select{
+    border: none;
+    background-color: #3E3232;
+    border: 5px outset #3E3232;
+    color:#E8D8C4 ;
+    font-size: 25px;
+    transition: 0.5s ease-out;
+}
+table tr th select:hover{
+    background-color: #2b2323;
+    border-color: #2b2323;
+}
+table tr th select option{
+    font-size: 25px;
+}
+table tr th input {
+    border: none;
+    background-color: #c6a3c7;
+    border: 5px outset #c6a3c7;
+    color:#E8D8C4;
+    font-size: 20px;
+    width: 80px;
+    padding: 0px 0px 0px 15px;
+    transition: 0.5s ease-out;
+}
+table tr th input:hover{
+    background-color: #ae81af;
+    border: 5px outset #ae81af;
+}
+form .taxe{
+    font-size: 25px !important;
+    padding: 15px;
+}
+form .taxe input[type=checkbox]{
+    accent-color: white;
+}
+form .taxe input[type=radio]{
+    accent-color: black;
+    border: none;
+}
+form #reductions{
+    display: flex;
+}
+form #reductions input{
+    margin-left: 15px;
+    margin-right: 5px;
+}
+#submit{
+    border: 15px outset 22;
+    border-radius:50% ;
+}
+#submit:hover{
+    border-color: #2b2323;
+}
+.strong{
+    font-weight: 900;
+    color: rgb(255, 0, 255);
+}
+@media (max-width: 768px) {
+     table tr th select{
+         font-size: 20px;
+         transition: 0.5s ease-out;
+     }
+     table tr th select option{
+         font-size: 15px;
+         transition: 0.5s ease-out;
+     }
+     table tr th input {
+         font-size: 15px;
+         transition: 0.5s ease-out;
+        }
+        form .taxe{
+            font-size: 20px;
+            transition: 0.5s ease-out;
+     }
+}
+@media (max-width: 450px) {
+    .hyperlinks {
+        font-size: 20px;
+        transition: 0.5s ease-out;
+     }
+     table tr th select{
+         font-size: 15px;
+         transition: 0.5s ease-out;
+     }
+     table tr th select option{
+         font-size: 15px;
+     }
+     table tr th input {
+         font-size: 10px;
+         transition: 0.5s ease-out;
+     }
+     form .taxe{
+         font-size: 15px !important;
+         padding: 15px;
+     }
+}

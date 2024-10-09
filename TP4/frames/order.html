@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        table{
+            margin-top: 80px;
+        }
+        th{
+            font-size: 35px;
+        }
+    </style>
+</head>
+<body>
+    <form action="new.html" method="get">
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+            </tr>
+            <tr>
+                <th>
+                    <select name="select1">
+                        <option value="100">Product 1 /PU = 100 DA</option>
+                        <option value="200">Product 2 /PU = 200 DA</option>
+                        <option value="300">Product 3 /PU = 300 DA</option>
+                        <option value="400">Product 4 /PU = 400 DA</option>
+                        <option value="500">Product 5 /PU = 500 DA</option>
+                    </select>
+                </th>
+                <th><input name="Quantity1"  type="number" value="1" min="1" max="9999"></th>
+            </tr>
+            <tr>
+                <th>
+                    <select name="select2" >
+                        <option value="100">Product 1 /PU = 100 DA</option>
+                        <option value="200">Product 2 /PU = 200 DA</option>
+                        <option value="300">Product 3 /PU = 300 DA</option>
+                        <option value="400">Product 4 /PU = 400 DA</option>
+                        <option value="500">Product 5 /PU = 500 DA</option>
+                    </select></th>
+                <th><input name="Quantity2" type="number" value="1" min="1" max="9999"></th>
+            </tr>
+            <tr>
+                <th>
+                    <select name="select3" >
+                        <option value="100">Product 1 /PU = 100 DA</option>
+                        <option value="200">Product 2 /PU = 200 DA</option>
+                        <option value="300">Product 3 /PU = 300 DA</option>
+                        <option value="400">Product 4 /PU = 400 DA</option>
+                        <option value="500">Product 5 /PU = 500 DA</option>
+                    </select>
+                </th>
+                <th><input name="Quantity3"  type="number" value="1" min="1" max="9999"></th>
+            </tr>
+        </table>
+        <label class="taxe">Taxe exoneration 19% : <input name="Exoneration" type="checkbox" ></label>
+        <label class="taxe" id="reductions">
+            <h3>Reduction :</h3> 
+            <label><input value="0"  id="0%reduction" type="radio" name="radio">None</label>
+            <label><input value="0.05"  id="5%reduction" type="radio" name="radio">5 %</label>
+            <label><input value="0.1" id="10%reduction" type="radio" name="radio">10 %</label>
+        </label>
+        <input   type="submit" id="submit" class="hyperlinks"value="Preview">
+        <a id="back" class="hyperlinks" href="default.html">Go Back</a>
+    </form>
+    
+</body>
+</html>

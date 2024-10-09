@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="order.css">
+</head>
+<body>
+    <header>
+        <h1>Products :</h1>
+        <ul>
+            <li class="li">I.Number of products:  0</li>
+            <li class="li">II.Total Quantity:  0</li>
+            <li class="li">III.TotalAmount:  0</li>
+        </ul>
+    </header>
+    <main>
+        <ul class="list">
+        </ul>
+    </main>
+    <footer>
+        <form onsubmit="event.preventDefault()">
+            <label>Product Name :<input class="information" type="text" placeholder="Product Name..." required></label>
+            <label>Quantity :<input class="information" type="number" value="1" required></label>
+            <label>Price :<input class="information" type="number" value="100" required></label>
+            <button onclick="AddProduct()">Add Product</button>
+        </form>
+        <h2 class="warning" style="text-align: center;"></h2>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
