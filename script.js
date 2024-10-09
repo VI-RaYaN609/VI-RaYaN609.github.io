@@ -32,7 +32,7 @@ function DarkTheme(){
             i.style.backgroundColor=`hsla(160, 7%, 20%,0.0)`;i.style.color=`rgb(150,150,150)`
         })
     }
-    document.body.style.backgroundImage=`url('TP2/dark.jpg')`
+    document.body.style.backgroundImage=`url('L2/TP2/dark.jpg')`
     navbar.style.backgroundColor=`hsla(160, 17%, 10%,0.6)`
     header.style.color = `rgb(255,255,255)`
     Array.from(ps).forEach((p)=>{
@@ -69,7 +69,7 @@ function LightTheme(){
             i.style.backgroundColor=`hsla(160, 7%, 20%,0.0)`;i.style.color=`rgb(150,150,150)`
         })
     }
-    document.body.style.backgroundImage=`url('TP2/Light2.jpg')`
+    document.body.style.backgroundImage=`url('L2/TP2/Light2.jpg')`
     navbar.style.backgroundColor=`hsla(160, 97%, 90%,0.4)`
     header.style.color = `rgb(0,0,0)`
 
@@ -107,7 +107,7 @@ function SpecialTheme(){
             i.style.backgroundColor=`hsla(160, 97%, 22%,0.0)`;i.style.color=`hsl(160, 100%, 95%)`
         })
     }
-    document.body.style.backgroundImage=`url('TP2/background.avif')`
+    document.body.style.backgroundImage=`url('L2/TP2/background.avif')`
     navbar.style.backgroundColor=`rgba(1, 61, 41,0.4)`
     header.style.color = `rgb(14, 102, 117)`
     Array.from(ps).forEach((p)=>{
