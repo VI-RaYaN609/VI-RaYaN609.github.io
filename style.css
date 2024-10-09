@@ -136,7 +136,6 @@ nav li:hover ol{
 nav ol li{
     display: block;
     padding: 5px;
-    margin: 5px;
 }
 nav li{
     position: relative;
@@ -166,7 +165,7 @@ button{
     margin-bottom: 0px;
     transition: 0.5s ease;
 }
-@media (max-width:900px){
+@media (max-width:1360px){
     button{
         font-size: 27px;
     }
@@ -181,7 +180,7 @@ button{
         width: 400px;
     }
 }
-@media (max-width:700px){
+@media (max-width:900px){
     header{
         font-size: 25px;
     }
@@ -189,9 +188,16 @@ button{
         font-size: 17px;
     }
 }
-@media (max-width: 600px) {
+@media (max-width: 800px) {
+    nav ol{
+        padding: 0;
+    }
+    nav ol li{
+        margin:0;
+        padding:0;
+    }
     button {
-      font-size: 22px; /* Set a smaller font size for smaller screens */
+      font-size: 16px; /* Set a smaller font size for smaller screens */
     }
     header{
         font-size: 20px;

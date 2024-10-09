@@ -184,5 +184,7 @@ document.addEventListener("DOMContentLoaded",function(){
 
     setInterval(RGBanimation, 10);
     setInterval(HSLanimation, 50);
-    
+    setTimeout(() => {
+        scrollto('header');
+    }, 500);
 })
