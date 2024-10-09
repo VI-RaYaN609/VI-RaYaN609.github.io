@@ -75,7 +75,7 @@ header{
     font-weight: bold;
     position: relative;
     animation :start-animation 3.5s ease-out;
-    transition:1s ease-out;
+    transition:.5s ease-out;
 }
 header a{
     padding: 0px;
@@ -109,7 +109,9 @@ nav{
     top: 20px;
     animation :start-animation 2.5s ease-out;
     z-index: 3;
-    transition: 1s ease-out;
+    transition: .5s ease;
+    background:linear-gradient(45deg , rgba(255, 255, 255, 0.5),rgba(48, 48, 48, 0.5));
+    border-radius: 25px;
 }
 nav ul{
     text-align: center;
@@ -162,7 +164,7 @@ button{
     font-size: 250%;
     margin-top: 0px;
     margin-bottom: 0px;
-    transition: 0.5s ease-out;
+    transition: 0.5s ease;
 }
 @media (max-width:900px){
     button{

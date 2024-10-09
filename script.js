@@ -33,7 +33,7 @@ function DarkTheme(){
         })
     }
     document.body.style.backgroundImage=`url('L2/TP2/dark.jpg')`
-    navbar.style.backgroundColor=`hsla(160, 17%, 10%,0.6)`
+    navbar.style.background=`linear-gradient(45deg , rgba(14, 0, 77, 0.5),rgba(0, 32, 5, 0.5))`
     header.style.color = `rgb(255,255,255)`
     Array.from(ps).forEach((p)=>{
         p.classList.remove("fade")
@@ -57,7 +57,7 @@ function DarkTheme(){
 function LightTheme(){
     for(let i of document.getElementsByClassName("button1")){
         i.addEventListener("mouseover",function(){
-            i.style.backgroundColor=`hsla(160, 77%, 70%,0.4)`;i.style.color=`rgb(150,150,150)`
+            i.style.backgroundColor=`rgba(255,255,255,0.5)`;i.style.color=`rgb(90,90,90)`
         })
         i.addEventListener("mouseout",function(){
             i.style.backgroundColor=`hsla(160, 97%, 90%,0.0)`;i.style.color=`black`
@@ -70,7 +70,7 @@ function LightTheme(){
         })
     }
     document.body.style.backgroundImage=`url('L2/TP2/Light2.jpg')`
-    navbar.style.backgroundColor=`hsla(160, 97%, 90%,0.4)`
+    navbar.style.background=`linear-gradient(45deg , rgba(255, 255, 255, 0.5),rgba(30, 30, 30, 0.5))`
     header.style.color = `rgb(0,0,0)`
 
     Array.from(ps).forEach((p)=>{
@@ -108,7 +108,7 @@ function SpecialTheme(){
         })
     }
     document.body.style.backgroundImage=`url('L2/TP2/background.avif')`
-    navbar.style.backgroundColor=`rgba(1, 61, 41,0.4)`
+    navbar.style.background=`rgba(1, 61, 41,0.4)`
     header.style.color = `rgb(14, 102, 117)`
     Array.from(ps).forEach((p)=>{
         p.classList.remove("fade")
