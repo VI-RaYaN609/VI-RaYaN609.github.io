@@ -129,7 +129,15 @@ function SpecialTheme(){
     max =80
     min = 30
 }
-
+function bounce_animation(){
+    document.querySelector(".YoutubeLogoH3").classList.add('animation-bounce')
+    document.querySelector(".Flash").classList.add('animation-flash')
+    setTimeout(()=>{
+        document.querySelector(".YoutubeLogoH3").classList.remove('animation-bounce')
+        document.querySelector(".Flash").classList.remove('animation-flash')
+    },1500)
+    
+}
 document.addEventListener("DOMContentLoaded",function(){
     //Setting DefaultBackground
     DarkTheme()
@@ -184,6 +192,7 @@ document.addEventListener("DOMContentLoaded",function(){
 
     setInterval(RGBanimation, 10);
     setInterval(HSLanimation, 50);
+    setInterval(bounce_animation, 4500);
     setTimeout(() => {
         scrollto('header');
     }, 500);

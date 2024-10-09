@@ -259,3 +259,65 @@ section h3{
 #mailme:hover{
     color: blueviolet;
 }
+.youtubeLogo:hover{
+    transform: scale(1.4);
+}
+.youtubeLogo{
+    font-size: 125px;
+    position: relative;
+    color: red;
+    border-radius: 50%;
+    transition: all .4s ease;
+}
+.youtubeLogo::before{
+    position: relative;
+    z-index: 5;
+}
+.youtubeLogo .Flash{
+    z-index: 4;
+    height: 50px;
+    width: 50px;
+    background: linear-gradient(45deg, rgb(97, 97, 97),rgb(255, 255, 255));
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 5px 5px 555px rgba(219, 52, 52, 0.8);
+}
+.YoutubeLogoH3{
+    animation-delay: 5s;      
+    animation-fill-mode: both;
+    animation-play-state: running;
+
+}
+.animation-flash{
+    animation: flahing 1s linear;
+}
+.animation-bounce{
+    animation: Bouncing 1s linear; 
+}
+@keyframes flashing{
+    20%,50%,80%,to{
+    }
+    40%{
+    }
+    70%{
+    }
+    90%{
+    }
+}
+@keyframes Bouncing{
+    20%,50%,80%,to{
+        transform: translateY(0);
+    }
+    40%{
+        transform: translateY(-30px);
+    }
+    70%{
+        transform: translateY(-15px);
+    }
+    90%{
+        transform: translateY(-4px);
+    }
+}
