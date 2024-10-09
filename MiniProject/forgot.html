@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/813a01fbc7.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <div class="Theme">
+            <input type="checkbox" id="switch-mode" hidden>
+            <label for="switch-mode" class="switch-mode"></label>
+        </div>
+        <ul class="middle">
+            <li><a href="store.html"><img class="logo"src="images/logo.png" alt="Nibou"></a></li>
+            <li><a href="store.html">Store</a></li>
+            <li><a href="library.html">Library</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="support.html">Support</a></li>
+        </ul>
+    </header>
+    <main class="LoginMain">
+        <div class="login-container">
+            <form action="">
+    
+                <h1 class="h1">Reset Password</h1>
+                <div class="input-box">
+                    <input class="input" type="text" placeholder="Username" required>
+                    <i class='bx bxs-user'></i>
+                </div>
+    
+                <div class="input-box">
+                    <input class="input" id="code" type="password" placeholder="Confirmation Code" required>
+                    <i id="passlock" class='bx bxs-lock passlock'data-i="1" ></i>
+                </div>
+                
+                <div class="input-box">
+                    <input class="input" type="password" placeholder="New Password" required>
+                    <i id="passlock" class='bx bxs-lock passlock'data-i="2" ></i>
+                </div>
+    
+                <div class="input-box">
+                    <input class="input" type="password" placeholder="Confirm Password" required>
+                    <i id="passlock" class='bx bxs-lock passlock'data-i="3" ></i>
+                </div>
+                <h2 style="text-align: center;" class="WRONG"></h2>
+                <button class="login-button" id="button" onclick="changePassword()">Change Password</button>
+    
+                <div class="register">
+                    <h3 id="response"></h3>
+                    <h2 id="response2"></h2>
+                    <h3><a href="login.html" class="register">Login</a></h3>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <ul class="top-footer">
+            <li>© 2024 Valve Corporation. All rights reserved. All trademarks are property of their respective owners in the US and other countries.
+                VAT included in all prices where applicable.   Privacy Policy   |   Legal   |   Steam Subscriber Agreement   |   Refunds   |   Cookies
+            </li>
+            <li></li>
+        </ul>
+        <ul class="bottom-footer">
+            <li>About us</li>
+            <li>Support</li>
+            <li>Gift Cards </li>
+        </ul>
+    </footer> 
+    <script>
+        const inp = document.querySelectorAll(".input")
+        const ConfirmationCode = Math.floor(Math.random()*9000)+1000
+        inp[1].placeholder = `Confirmation Code : (${ConfirmationCode})`
+        inp[1].setAttribute(`data-code`,ConfirmationCode)
+    </script>
+    <script src="index.js"></script>
+    <script src="Login.js"></script>
+</body>
+</html>

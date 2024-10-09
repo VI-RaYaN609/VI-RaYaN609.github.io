@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/813a01fbc7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="Theme">
+            <input type="checkbox" id="switch-mode" hidden>
+            <label for="switch-mode" class="switch-mode"></label>
+        </div>
+        <ul class="middle">
+            <li><a href="store.html"><img class="logo"src="images/logo.png" alt="Nibou"></a></li>
+            <li><a href="store.html">Store</a></li>
+            <li><a href="library.html">Library</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="support.html">Support</a></li>
+        </ul>
+        <div class="profile">
+            <div class="cart-container">
+               <i class="fa-solid fa-cart-shopping" id="cart"><p class="cart-amount">0</p></i>
+               <div class="cartDrop">
+                 <ul class="cart-content">
+                 </ul>
+                 <h2>Check Out</h2>
+               </div>
+            </div>
+            
+            <div class="profile-information">
+               <h1 class="Username">Username &#9660;</h1>
+               <h2 class="balance" style="text-align: center;">0.00 $</h2>
+               <ul class="hidden">
+                   <li><a href="Profile/information.html"><p>View Profile</p></a></li>
+                   <li><a href="Profile/funds.html"><p>Add Funds</p></a></li>
+                   <li><a href="login.html"><p>Sign Out of account</p></a></li>
+                </ul>
+            </div>
+            <img class="profile-image" src="" alt="">
+        </div>
+    </header>
+    <main class="main gap30px">
+        <h1 class="h1">New Releases</h1>
+        <div class="newrealeses">
+        </div>
+        <h1 class="h1"> Recommended Games</h1>
+        <div class="recommend">
+        </div>
+        <h1 class="h1"> Explore Games</h1>
+        <div class="container">
+        </div>
+        <button class="loadmore" onclick="fetchdata()">Load More</button>
+    </main>
+    <footer>
+        <ul class="top-footer">
+            <li>© 2024 Valve Corporation. All rights reserved. All trademarks are property of their respective owners in the US and other countries.
+                VAT included in all prices where applicable.   Privacy Policy   |   Legal   |   Steam Subscriber Agreement   |   Refunds   |   Cookies
+            </li>
+            <li></li>
+        </ul>
+        <ul class="bottom-footer">
+            <li>About us</li>
+            <li>Support</li>
+            <li>Gift Cards </li>
+        </ul>
+    </footer> 
+    <script src="index.js"></script>
+    <script src="usercheck.js"></script>
+</body>
+</html>
